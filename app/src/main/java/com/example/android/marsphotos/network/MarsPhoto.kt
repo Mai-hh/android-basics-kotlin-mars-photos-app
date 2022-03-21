@@ -1,4 +1,11 @@
 package com.example.android.marsphotos.network
 
-class MarsPhoto {
-}
+import com.squareup.moshi.Json
+
+data class MarsPhoto (
+    @Json(name = "img_src")
+    val imgSrcUrl: String,
+
+    @Json(name = "id")
+    val id: String
+)
